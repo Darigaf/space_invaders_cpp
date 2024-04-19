@@ -1,4 +1,4 @@
-# Install script for directory: /home/mateus/Documents/Importante/programas/git/space_invaders_cpp
+# Install script for directory: /home/mateus/git/space_invaders_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mateus/Documents/Importante/programas/git/space_invaders_cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mateus/git/space_invaders_cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -9,5 +9,5 @@ set(SOURCES
 	src/space_invaders.cxx
 )
 add_executable(space_invaders ${SOURCES})
-#target_link_libraries(space_invaders iostream string)
+target_link_libraries(space_invaders ncurses)
 target_include_directories(space_invaders PUBLIC "${PROJECT_BINARY_DIR}")
