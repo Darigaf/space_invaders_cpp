@@ -33,4 +33,5 @@ CMakeFiles/space_invaders.dir/src/space_invaders.cxx.o: \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/unctrl.h /usr/include/curses.h
+ /usr/include/unctrl.h /usr/include/curses.h /usr/include/string.h \
+ /usr/include/strings.h

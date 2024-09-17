@@ -1,7 +1,6 @@
 #include <ncurses.h>
+#include <string.h>
 void start_screen(){
-	int max_rows, max_cols;
-	getmaxyx(stdscr, max_rows, max_cols);
 	//start screen with some defined atributes
 	initscr();
 	raw();	
@@ -18,15 +17,18 @@ void end_screen(){
 	attroff(COLOR_PAIR(1));
 }
 int main_screen(){
+	int max_rows, max_cols;
+	getmaxyx(stdscr, max_rows, max_cols);
 	char game_title[]="SPACE INVADERS";
 	char game_title_pt_br[]="OS INVASORES DO ESPAÇO";
-	mvprintw(row/2,(col-strlen(mesg))/2,"%s",mesg);
-	
-
+	mvprintw(0,(max_cols-strlen(game_title))/2,"%s",game_title);
 }
 
 int main(){
 	start_screen();
+	refresh();
+	getch();
+	main_screen();
 	refresh();
 	getch();
 	end_screen();	
